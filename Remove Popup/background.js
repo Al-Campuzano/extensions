@@ -2,6 +2,6 @@
 	chrome.browserAction.onClicked.addListener(function(tab) {
 	  console.log('Removing popup');
 	  chrome.tabs.executeScript({
-	    code: '$(".fc-dialog-container").remove();'
+	    code: 'document.querySelector(".fc-dialog-container").remove();'
 	  });
 	});
