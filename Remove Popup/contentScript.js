@@ -1,0 +1,1 @@
+console.log("%cContentScript", "color:white; background-color: red; font-size: 20px;");

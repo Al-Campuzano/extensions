@@ -2,7 +2,8 @@
 	chrome.browserAction.onClicked.addListener(function(tab) {
 	  removePopup();
 	});
-	
+
+// Called when the user keys in Alt+r	
 	chrome.commands.onCommand.addListener(function(command) {
       console.log('Command:', command);
 			if (command === 'remove-popup') {

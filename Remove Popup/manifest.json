@@ -1,7 +1,7 @@
 {
 	  "name": "Pop up remover",
 	  "description": "Remove ad blocker popup",
-	  "version": "1.2",
+	  "version": "1.3",
 	  "permissions": [
 	    "activeTab"
 	  ],
@@ -21,5 +21,12 @@
 				 "description": "Remove pop up from page"
 			 }
 		},
+		"content_scripts": [
+	   {
+	     "matches": ["https://www.theweathernetwork.com/ca/*"],
+	     "css": ["myStyles.css"],
+	     "js": ["contentScript.js"]
+	   }
+	 ],
 	  "manifest_version": 2
 }
